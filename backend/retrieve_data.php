@@ -17,12 +17,12 @@ function getData($mysql) {
         $response[] = $i;
     };
 
-    return $response
-}
+    return $response;
+};
 
 // Main
 
-$data getData($mysql);
+$data = getData($mysql);
 echo json_encode($data);
 
 ?>
