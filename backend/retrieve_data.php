@@ -2,7 +2,9 @@
 
 include("connection.php");
 
-function getData() {
+// Functions
+
+function getData($mysql) {
     $query = $mysql -> prepare(
     "SELECT * FROM data");
 
@@ -17,5 +19,10 @@ function getData() {
 
     return $response
 }
+
+// Main
+
+$data getData($mysql);
+echo json_encode($data);
 
 ?>
