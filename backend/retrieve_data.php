@@ -9,7 +9,7 @@ function getData($mysql) {
     "SELECT * FROM data");
 
     $query -> execute();
-    $array = $query -> getResult();
+    $array = $query -> get_result();
 
     $response = [];
 
